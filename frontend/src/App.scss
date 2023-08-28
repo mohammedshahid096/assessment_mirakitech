@@ -1,0 +1,35 @@
+$bgColor: black;
+$bgColorWhite: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Roboto", "Poppins";
+}
+
+a {
+  color: $bgColor;
+  text-decoration: none;
+}
+
+.bgWrapper {
+  background-color: $bgColor;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgWhiteBox {
+  background-color: $bgColorWhite;
+}
+
+.bgButtonBlue {
+  button {
+    background-color: $bgColor;
+    text-transform: capitalize;
+  }
+}

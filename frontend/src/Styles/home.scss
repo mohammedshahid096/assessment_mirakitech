@@ -1,0 +1,79 @@
+.homeWrapper {
+  color: white;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: unset;
+
+  .AllTaskWrapper {
+    margin-top: 1rem;
+    color: black;
+    width: 40rem;
+
+    > div {
+      background-color: white;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      margin-top: 1rem;
+      > div:first-child {
+        width: 70%;
+      }
+      .srno {
+        width: 35px;
+        font-size: larger;
+        color: #9c27b0;
+      }
+      p {
+        color: gray;
+        padding-right: 10px;
+        width: 97%;
+      }
+    }
+
+    .noTasks {
+      flex-direction: column;
+      svg {
+        font-size: 8rem;
+      }
+    }
+
+    svg {
+      font-size: larger;
+    }
+  }
+}
+
+// !-------------------------------------------------------
+
+@media screen and (max-width: 700px) {
+  .homeWrapper {
+    .AllTaskWrapper {
+      width: 100%;
+      > div {
+        > div:first-child {
+          width: 100%;
+        }
+        p {
+          padding: 0;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+// !-------------------------------------------------------
+@media screen and (max-width: 350px) {
+  .homeWrapper {
+    .AllTaskWrapper {
+      > div {
+        display: block;
+      }
+    }
+  }
+  .css-17m0rzj {
+    width: 100% !important;
+  }
+}
